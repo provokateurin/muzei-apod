@@ -51,7 +51,7 @@ public class ApodNasaArtSource extends MuzeiArtProvider {
     }
 
     @Override
-    protected void onLoadRequested(boolean initial) {
+    public void onLoadRequested(boolean initial) {
         URI topUri;
         try {
             topUri = new URI("https://apod.nasa.gov/");
